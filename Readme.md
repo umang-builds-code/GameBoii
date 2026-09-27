@@ -17,7 +17,7 @@ GAMEBoiii
 7. [Step-by-Step Improvement Roadmap](#step-by-step-improvement-roadmap)
 8. [License & Acknowledgments](#license--acknowledgments)
 
----
+----
 
 ## Architecture Overview
 
