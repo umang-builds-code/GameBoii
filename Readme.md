@@ -201,7 +201,7 @@ An exhaustive audit of the source code identified several bugs, accuracy flaws, 
 
 To ensure code stability and maintain existing working components, improvements will be conducted in strictly isolated, testable phases:
 
-### Phase 1: Critical Bug Fixes (Zero Regression)
+### Phase 1- Critical Bug Fixes (Zero Regression)
 - [x] Connect `Bus::read` to `APU::read` for address range `0xFF10 - 0xFF3F`.
 - [x] Correct Joypad register handling in `Bus::key_down` / `key_up` to eliminate register mutation.
 - [x] Fix PPU Mode 0 -> Mode 1 state transition logic in `PPU::tick`.
@@ -209,16 +209,16 @@ To ensure code stability and maintain existing working components, improvements 
 - [x] Make `Screen::update_screen` pitch-aware and safe via `SDL_UpdateTexture`.
 - [x] Eliminate double `SDL_Quit` and remove `noexcept` violation in `CPU::step`.
 
-### Phase 2: Memory & Battery Persistence
+### Phase 2- Memory & Battery Persistence
 - [ ] Implement persistent battery-backed SRAM saving and loading (`.sav` file alongside ROM).
 - [ ] Implement MBC5 mapper support for expanded game compatibility.
 
-### Phase 3: Performance & Architecture Optimization
+### Phase 3- Performance & Architecture Optimization
 - [ ] Change `PPU::get_buffer()` to return a `const` reference.
 - [ ] Implement an audio sample queue buffer to batch `SDL_QueueAudio` calls.
 - [ ] Eliminate unnecessary heap allocations during CPU instruction lookup.
 
-### Phase 4: Accuracy & Polish
+### Phase 4- Accuracy & Polish
 - [ ] Fix IF register mask (`0xE0`) and timer overflow behaviors.
 - [ ] Refine window line counter reset conditions.
 - [ ] Add customizable scaling and fullscreen toggle hotkeys (e.g. `F11`, integer scale multipliers).
