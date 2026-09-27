@@ -1,0 +1,7 @@
+!include/*.hpp
+!src/*.cpp
+!CMakeLists.txt
+!.gitignore
+!roms/*.gb
+!Readme.md
+build
