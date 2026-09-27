@@ -1,6 +1,7 @@
 # GBJoy - Game Boy (DMG) Emulator
 
-GAMEBoiii is an educational Game Boy (DMG-01) emulator written in C++20, utilizing SDL2 for cross-platform video rendering, audio output, and input handling.
+GAMEBoiii
+ is an educational Game Boy (DMG-01) emulator written in C++20, utilizing SDL2 for cross-platform video rendering, audio output, and input handling.
 
 ---
 
